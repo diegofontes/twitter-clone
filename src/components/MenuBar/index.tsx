@@ -8,7 +8,11 @@ import React from 'react';
          BellIcon,
          EmailIcon,
          FavoriteIcon,
-         ProfileIcon } from './styles';
+         ProfileIcon,
+        Botside,
+        Avatar,
+        ProfileData,
+        ExitIcon } from './styles';
 
 import Button from '../Button/';
 
@@ -43,7 +47,14 @@ const MenuBar: React.FC = () => {
                     </Button>
             </Topside>
 
-            
+            <Botside>
+                <Avatar/>
+                <ProfileData>
+                    <strong>Diego Fontes</strong>
+                    <span>@duffyind</span>
+                </ProfileData>
+                    <ExitIcon />
+            </Botside>
         </Container>
   );
 }
